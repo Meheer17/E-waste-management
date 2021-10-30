@@ -41,9 +41,6 @@ svg.intro.go .text-stroke:nth-child(5) {
 svg.intro.go .text-stroke:nth-child(6) {
       animation-delay: 1.8s;
 }
-
-
-
 @keyframes dash {
   100% {
     stroke-dashoffset: 0;
