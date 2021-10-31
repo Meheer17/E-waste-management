@@ -4,8 +4,16 @@
       {
         "id": "0020c51a-60c8-40ed-b451-eaa7c78d2c36",
         "line": 1,
-        "version": 78,
+        "version": 310,
         "index": 0
+      }
+    ],
+    "public/css/styles.css": [
+      {
+        "id": "736ea619-cdaa-42fc-96d7-359316df02aa",
+        "line": 221,
+        "version": 72,
+        "index": 4059
       }
     ]
   }

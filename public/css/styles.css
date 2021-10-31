@@ -224,7 +224,7 @@ h1:nth-child(1) {
 }
 
 p{
-    font-size: 42px;
+    font-size: 40px;
 	color: black;
 }
 
@@ -285,7 +285,7 @@ hl1{
 }
 
 hl2{
-    color: rgb(60, 207, 233);
+    color: rgb(116, 40, 216)
 }
 
 .vc h5{
@@ -307,4 +307,24 @@ code{
     height: 400px;
     margin-top: 20px;
     margin-bottom: 40px;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+    background-color:black;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    background-color:rgb(219, 125, 17);
+    border:2px solid #92530b;
+}
+
+::-webkit-scrollbar-track{
+    margin-top:30px;
+    border-radius:20px;
+}
+
+mono {
+    font-family: monospace;
 }
