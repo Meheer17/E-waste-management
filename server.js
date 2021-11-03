@@ -1,37 +1,38 @@
 const express = require('express');
+var path = require('path');
 
 const app = express();
 
-
-app.use(express.static('public'));
-app.set('view engine', 'html');
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.route('/').get((req, res) => {
-    res.sendFile(process.cwd() + '/html/index.html');
+    res.render('index');
 });
 
 app.route('/about').get((req, res) => {
-    res.sendFile(process.cwd() + '/html/abt.html');
+    res.render('abt');
 });
 
 app.route('/contacts').get((req, res) => {
-    res.sendFile(process.cwd() + '/html/con.html');
+    res.render('con');
 });
 
 app.route('/effects').get((req, res) => {
-    res.sendFile(process.cwd() + '/html/eff.html');
+    res.render('eff');
 });
 
 app.route('/solutions').get((req, res) => {
-    res.sendFile(process.cwd() + '/html/sol.html');
+    res.render('sol');
 });
 
 app.route('/your-part').get((req, res) => {
-    res.sendFile(process.cwd() + '/html/urp.html');
+    res.render('urp');
 });
 
 app.route('/introduction').get((req, res) => {
-    res.sendFile(process.cwd() + '/html/intro.html');
+    res.render('intro');
 });
 
 app.listen(3000, () => {
